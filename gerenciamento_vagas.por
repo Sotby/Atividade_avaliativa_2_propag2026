@@ -42,10 +42,8 @@ programa
 	
 	funcao entrada(cadeia &vagas[], cadeia placa, inteiro vaga){
 		limpa()
-		inteiro existe = 0
 		para(inteiro i=0;i<30;i++){
 			se(placa == vagas[i]){
-				existe = 1
 				escreva("Placa ja cadastrada\n")
 				retorne
 			}
@@ -104,7 +102,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 910; 
+ * @POSICAO-CURSOR = 871; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
