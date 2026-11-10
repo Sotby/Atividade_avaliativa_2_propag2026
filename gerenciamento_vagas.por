@@ -42,6 +42,14 @@ programa
 	
 	funcao entrada(cadeia &vagas[], cadeia placa, inteiro vaga){
 		limpa()
+		inteiro existe = 0
+		para(inteiro i=0;i<30;i++){
+			se(placa == vagas[i]){
+				existe = 1
+				escreva("Placa ja cadastrada\n")
+				retorne
+			}
+		}
 		se(vagas[vaga-1] != ""){
 			escreva("Vaga ocupada!\n")
 		} senao{
@@ -68,11 +76,15 @@ programa
 				caso 1:
 					placa = ler_placa()
 					vaga = ler_vaga()
-					se(vaga != -1) entrada(vagas,placa,vaga)	
+					se(vaga != -1){
+						entrada(vagas,placa,vaga)	
+					}
 				pare
 				caso 2:
 					vaga = ler_vaga()
-					se(vaga != -1) saida(vagas,vaga)
+					se(vaga != -1){
+						saida(vagas,vaga)
+					}
 				pare
 				caso 3:
 					listar(vagas)
@@ -92,7 +104,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 971; 
+ * @POSICAO-CURSOR = 910; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
